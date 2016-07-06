@@ -5,3 +5,4 @@ pkg/
 .ruby-gemset
 Gemfile.lock
 /coverage/
+.idea/

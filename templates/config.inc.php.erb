@@ -9,4 +9,8 @@
   $cfg['Servers'][$i]['<%= property %>'] = '<%= value %>';
     <% end -%>
   <% end %>
+
+  <% @settings.each do |setting, value| -%>
+    $cfg['<%= setting %>'] = '<%= value %>';
+  <% end -%>
 ?>

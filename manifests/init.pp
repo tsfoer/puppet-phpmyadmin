@@ -32,6 +32,7 @@
 # === Copyright
 #
 # See LICENSE file, Arthur Leonard Andersen (c) 2013
+# (c) 2016 Thomas Förster
 
 # Class:: phpmyadmin
 #
@@ -41,6 +42,7 @@ class phpmyadmin (
   $user     = 'www-data',
   $revision = 'origin/STABLE',
   $servers  = [],
+  $settings = [],
 ) {
 
   exec { "PMA install dir ${path}":
