@@ -14,8 +14,8 @@ $cfg['Servers'][$i]['<%= property %>'] = '<%= value %>';
 
 $cfg['blowfish_secret'] = '<%= Digest::SHA256.hexdigest @hostname %>';
 
-<% @settings.each do |key, val| -%>
-$cfg['<%= key %>'] = <%= val %>;
+<% @settings.each do |key, val| %>
+$cfg['<%= key %>'] = '<%= val %>';
 <% end -%>
-
+[A
 ?>
